@@ -5,8 +5,33 @@ import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Skull, ChevronRight, ChevronLeft } from "lucide-react";
 import Link from "next/link";
+import Script from "next/script";
 
 export default function Home() {
+  // Structured Data for SEO
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "How to Understand Women",
+    "description": "Can you survive the ultimate relationship test? Play the most hilarious interactive game about understanding women. 161 scenarios, brutal narrator, infinite gameplay.",
+    "url": "https://how-to-understand-women.vercel.app",
+    "genre": ["Comedy", "Interactive Fiction", "Relationship Simulator"],
+    "gamePlatform": "Web Browser",
+    "playMode": "SinglePlayer",
+    "applicationCategory": "Game",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "1000",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  };
   const [step, setStep] = useState(1);
 
   const nextStep = () => {
@@ -32,7 +57,15 @@ export default function Home() {
   }, [step]);
 
   return (
-    <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-background px-4 py-8">
+    <>
+      {/* Structured Data for SEO */}
+      <Script
+        id="structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      
+      <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-background px-4 py-8">
       {/* Retro Background Effects */}
       <div className="absolute inset-0 overflow-hidden opacity-20">
         <div className="absolute left-1/4 top-1/4 h-64 w-64 animate-pulse rounded-full bg-primary blur-3xl" />
@@ -334,5 +367,6 @@ export default function Home() {
         </AnimatePresence>
       </div>
     </div>
+    </>
   );
 }

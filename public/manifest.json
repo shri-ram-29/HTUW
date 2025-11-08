@@ -1,0 +1,20 @@
+{
+  "name": "How to Understand Women - The Ultimate Relationship Survival Game",
+  "short_name": "HTUW Game",
+  "description": "Can you survive the ultimate relationship test? Play the most hilarious interactive game about understanding women.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#a855f7",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["games", "entertainment"],
+  "lang": "en-US"
+}
