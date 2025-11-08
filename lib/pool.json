@@ -1,0 +1,2257 @@
+[
+  {
+    "id": 1,
+    "category": "texting",
+    "setup": "She says she's fine.",
+    "options": ["Okay cool", "Are you sure?", "Buy her food", "Say sorry"],
+    "outcomes": {
+      "1": "You failed. She wasn’t fine.",
+      "2": "She says yes. Still not fine.",
+      "3": "Peace offering accepted. +20 XP.",
+      "4": "Classic move. Still confused."
+    },
+    "xp_range": [10, 30],
+    "rarity": "common"
+  },
+  {
+    "id": 2,
+    "category": "food",
+    "setup": "She says 'anything' for dinner.",
+    "options": ["Pizza", "Chinese", "Biryani", "Ask again"],
+    "outcomes": {
+      "1": "No.",
+      "2": "No, too oily.",
+      "3": "She’s vegetarian today.",
+      "4": "She says 'anything' again. Infinite loop unlocked."
+    },
+    "xp_range": [15, 30],
+    "rarity": "common"
+  },
+  {
+    "id": 3,
+    "category": "mood",
+    "setup": "She’s quiet, looking at her phone.",
+    "options": ["Ask if she's mad", "Stay silent", "Send meme", "Offer ice cream"],
+    "outcomes": {
+      "1": "She says no, but yes.",
+      "2": "You survived by doing nothing.",
+      "3": "She smiled. Temporary truce.",
+      "4": "Ice cream heals all. +25 XP."
+    },
+    "xp_range": [10, 35],
+    "rarity": "common"
+  },
+  {
+    "id": 4,
+    "category": "birthday",
+    "setup": "Her birthday is tomorrow.",
+    "options": ["Ask what she wants", "Buy nothing", "Write a note", "Gift socks"],
+    "outcomes": {
+      "1": "'Nothing' means 'everything'.",
+      "2": "She’ll remember forever. Badly.",
+      "3": "Tears of joy. +40 XP.",
+      "4": "Socks? She’s not your dad."
+    },
+    "xp_range": [10, 50],
+    "rarity": "rare"
+  },
+  {
+    "id": 5,
+    "category": "arguments",
+    "setup": "She says 'Do what you want.'",
+    "options": ["Do it", "Don’t do it", "Apologize", "Pretend you didn’t hear"],
+    "outcomes": {
+      "1": "Instant chaos. -10 XP.",
+      "2": "She’s upset anyway.",
+      "3": "Safe choice. +20 XP.",
+      "4": "Coward’s move, but it worked."
+    },
+    "xp_range": [5, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 6,
+    "category": "social",
+    "setup": "She sees you liked someone’s photo.",
+    "options": ["Say it's old", "Say it's a cousin", "Delete the app", "Run"],
+    "outcomes": {
+      "1": "She checked. It was 3 hours ago.",
+      "2": "You don’t have that many cousins.",
+      "3": "Wise. Digital cleanse unlocked.",
+      "4": "You can’t run from Wi-Fi."
+    },
+    "xp_range": [10, 30],
+    "rarity": "rare"
+  },
+  {
+    "id": 7,
+    "category": "random",
+    "setup": "She says 'We need to talk.'",
+    "options": ["Panic", "Pretend to sleep", "Ask about what", "Say okay calmly"],
+    "outcomes": {
+      "1": "Correct instinct.",
+      "2": "Dream of danger.",
+      "3": "She says 'later'. Fear grows.",
+      "4": "You gained 5 seconds of peace."
+    },
+    "xp_range": [10, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 8,
+    "category": "texting",
+    "setup": "She left you on read.",
+    "options": ["Double text", "Wait", "Send meme", "Unsend previous message"],
+    "outcomes": {
+      "1": "Desperation detected.",
+      "2": "She replies 'sorry fell asleep'. It’s noon.",
+      "3": "Good move. +20 XP.",
+      "4": "She never saw it. Yet she did."
+    },
+    "xp_range": [15, 35],
+    "rarity": "common"
+  },
+  {
+    "id": 9,
+    "category": "mood",
+    "setup": "She says 'You never listen.'",
+    "options": ["What?", "Apologize", "Repeat last sentence", "Change topic"],
+    "outcomes": {
+      "1": "Exactly.",
+      "2": "Safe but weak. +15 XP.",
+      "3": "Impressive bluff.",
+      "4": "She noticed. Bad move."
+    },
+    "xp_range": [10, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 10,
+    "category": "arguments",
+    "setup": "She says 'I’m not mad.'",
+    "options": ["Believe her", "Offer chocolate", "Say 'good'", "Hug her"],
+    "outcomes": {
+      "1": "She’s mad.",
+      "2": "She’s still mad but eating.",
+      "3": "She’s madder.",
+      "4": "Temporary forgiveness. +30 XP."
+    },
+    "xp_range": [10, 40],
+    "rarity": "common"
+  },
+  {
+    "id": 11,
+    "category": "food",
+    "setup": "She’s hungry and says 'you choose'.",
+    "options": ["Suggest pizza", "Say sushi", "Ask her again", "Guess salad"],
+    "outcomes": {
+      "1": "Too cheesy.",
+      "2": "Too fancy.",
+      "3": "Still your fault.",
+      "4": "She’s suddenly craving pasta."
+    },
+    "xp_range": [10, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 12,
+    "category": "random",
+    "setup": "You said 'chill' during an argument.",
+    "options": ["Apologize", "Defend yourself", "Double down", "Play dead"],
+    "outcomes": {
+      "1": "She’s cooling slightly. +20 XP.",
+      "2": "Fire intensifies.",
+      "3": "Respectfully doomed.",
+      "4": "Not effective, but brave."
+    },
+    "xp_range": [10, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 13,
+    "category": "social",
+    "setup": "She posts a story saying 'Some people change.'",
+    "options": ["Ignore", "Reply with emoji", "Ask who she means", "Panic quietly"],
+    "outcomes": {
+      "1": "You’re 90% safe.",
+      "2": "Now you’re in it.",
+      "3": "Mistake. Big mistake.",
+      "4": "Correct emotional strategy."
+    },
+    "xp_range": [10, 30],
+    "rarity": "rare"
+  },
+  {
+    "id": 14,
+    "category": "texting",
+    "setup": "She texts 'K'.",
+    "options": ["Reply 'ok'", "Send meme", "Call her", "Ignore it"],
+    "outcomes": {
+      "1": "Volcano triggered.",
+      "2": "Humor saves the day. +20 XP.",
+      "3": "She says 'why did you call?'",
+      "4": "She double texts. Reverse psychology success."
+    },
+    "xp_range": [10, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 15,
+    "category": "random",
+    "setup": "She asks 'Would you still love me if I was a worm?'",
+    "options": ["Yes", "No", "What kind of worm?", "Why are we talking about this?"],
+    "outcomes": {
+      "1": "Correct. Always yes.",
+      "2": "Game over.",
+      "3": "She laughs. +25 XP.",
+      "4": "You’re overthinking again."
+    },
+    "xp_range": [15, 30],
+    "rarity": "rare"
+  },
+  {
+    "id": 16,
+    "category": "mood",
+    "setup": "She says 'Nothing’s wrong.'",
+    "options": ["Drop it", "Ask again", "Bring food", "Send a meme"],
+    "outcomes": {
+      "1": "Now something is wrong.",
+      "2": "She’s annoyed. Still wrong.",
+      "3": "Smart move. +30 XP.",
+      "4": "Temporary distraction."
+    },
+    "xp_range": [10, 35],
+    "rarity": "common"
+  },
+  {
+    "id": 17,
+    "category": "birthday",
+    "setup": "You forgot her half birthday.",
+    "options": ["Apologize", "Say 'that’s not a thing'", "Buy ice cream", "Change topic"],
+    "outcomes": {
+      "1": "Good start. +20 XP.",
+      "2": "Now it’s a thing.",
+      "3": "She forgives with dessert.",
+      "4": "She noticed. Bad move."
+    },
+    "xp_range": [10, 25],
+    "rarity": "rare"
+  },
+  {
+    "id": 18,
+    "category": "arguments",
+    "setup": "She brings up something from 2018.",
+    "options": ["Apologize again", "Deny memory", "Blame Mercury retrograde", "Listen silently"],
+    "outcomes": {
+      "1": "Peace restored, briefly.",
+      "2": "She remembers *exactly* what you said.",
+      "3": "She accepts. Stars blamed.",
+      "4": "Smart. +30 XP."
+    },
+    "xp_range": [10, 35],
+    "rarity": "rare"
+  },
+  {
+    "id": 19,
+    "category": "social",
+    "setup": "She changes her profile pic to black.",
+    "options": ["Ask why", "Ignore", "Post story too", "Compliment it"],
+    "outcomes": {
+      "1": "Now she’s mad you noticed.",
+      "2": "You’re nervous but alive.",
+      "3": "Drama war initiated.",
+      "4": "Smart distraction. +25 XP."
+    },
+    "xp_range": [15, 30],
+    "rarity": "common"
+  },
+  {
+    "id": 20,
+    "category": "random",
+    "setup": "She says 'It’s not you, it’s me.'",
+    "options": ["Accept", "Ask if it’s really you", "Send long text", "Say 'cool'"],
+    "outcomes": {
+      "1": "Sad but wise.",
+      "2": "It was you.",
+      "3": "Seen at 8:41pm.",
+      "4": "Bold exit. +10 XP."
+    },
+    "xp_range": [10, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 21,
+    "category": "texting",
+    "setup": "She replies with just 'hmm'.",
+    "options": ["Reply 'hmm?'", "Send meme", "Say 'ok'", "Go offline"],
+    "outcomes": {
+      "1": "She says 'nothing'. Everything is something.",
+      "2": "Safe choice. +20 XP.",
+      "3": "Tension increases.",
+      "4": "Coward’s peace achieved."
+    },
+    "xp_range": [10, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 22,
+    "category": "mood",
+    "setup": "She’s typing... then stops.",
+    "options": ["Wait patiently", "Ask what she was saying", "Send '??'", "Type too"],
+    "outcomes": {
+      "1": "You did well. +25 XP.",
+      "2": "She says 'nothing important'. Dangerous.",
+      "3": "Bad idea. -5 XP.",
+      "4": "Typing war initiated."
+    },
+    "xp_range": [10, 30],
+    "rarity": "common"
+  },
+  {
+    "id": 23,
+    "category": "arguments",
+    "setup": "She says 'It’s not a big deal.'",
+    "options": ["Believe her", "Say 'okay'", "Ask what’s wrong", "Apologize immediately"],
+    "outcomes": {
+      "1": "It’s a big deal.",
+      "2": "It just became a bigger deal.",
+      "3": "Now she’s more annoyed.",
+      "4": "Best possible outcome. +30 XP."
+    },
+    "xp_range": [10, 35],
+    "rarity": "common"
+  },
+  {
+    "id": 24,
+    "category": "food",
+    "setup": "She’s on a diet but wants dessert.",
+    "options": ["Buy it anyway", "Say 'you sure?'", "Suggest fruit", "Eat it yourself"],
+    "outcomes": {
+      "1": "Heroic act. +25 XP.",
+      "2": "She’s offended.",
+      "3": "Rejected.",
+      "4": "She’s mad. You ate her craving."
+    },
+    "xp_range": [10, 30],
+    "rarity": "rare"
+  },
+  {
+    "id": 25,
+    "category": "texting",
+    "setup": "You sent a heart emoji. She reacted with thumbs up.",
+    "options": ["Send another heart", "Ask if she’s mad", "Reply 'wow'", "Ignore it"],
+    "outcomes": {
+      "1": "Too needy. -5 XP.",
+      "2": "She says 'no'. Yes.",
+      "3": "Sarcasm vs sarcasm unlocked.",
+      "4": "You win by silence. +20 XP."
+    },
+    "xp_range": [5, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 26,
+    "category": "random",
+    "setup": "She says 'You’ve changed.'",
+    "options": ["Apologize", "Say 'you too'", "Ask how", "Blame the weather"],
+    "outcomes": {
+      "1": "She softens slightly.",
+      "2": "Dangerous comeback.",
+      "3": "Now it’s a full review session.",
+      "4": "Smart deflection. +25 XP."
+    },
+    "xp_range": [10, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 27,
+    "category": "mood",
+    "setup": "She says 'Forget it.'",
+    "options": ["Forget it", "Don’t forget it", "Apologize", "Ask again"],
+    "outcomes": {
+      "1": "You forgot peace too.",
+      "2": "Correct emotional math. +20 XP.",
+      "3": "Safe but boring.",
+      "4": "Now she’s madder."
+    },
+    "xp_range": [10, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 28,
+    "category": "arguments",
+    "setup": "She says 'I don’t want to argue.'",
+    "options": ["Stop talking", "Keep explaining", "Say 'me neither'", "Apologize anyway"],
+    "outcomes": {
+      "1": "Good choice. +15 XP.",
+      "2": "It’s now an argument.",
+      "3": "Somehow still arguing.",
+      "4": "Peace treaty signed."
+    },
+    "xp_range": [10, 30],
+    "rarity": "common"
+  },
+  {
+    "id": 29,
+    "category": "social",
+    "setup": "She says 'Who’s that girl in your story?'",
+    "options": ["Friend", "Cousin", "Colleague", "Panic"],
+    "outcomes": {
+      "1": "Interrogation begins.",
+      "2": "She checked your family tree.",
+      "3": "Office drama unlocked.",
+      "4": "Best instinct. +10 XP."
+    },
+    "xp_range": [10, 20],
+    "rarity": "common"
+  },
+  {
+    "id": 30,
+    "category": "birthday",
+    "setup": "You gifted her a mug that says 'World’s Best Girlfriend'.",
+    "options": ["Say it’s custom", "Say it’s cute", "Admit Amazon suggested it", "Hide it forever"],
+    "outcomes": {
+      "1": "She smiles slightly. +20 XP.",
+      "2": "Basic, but acceptable.",
+      "3": "She’s insulted by the effort level.",
+      "4": "Stealth mission success."
+    },
+    "xp_range": [10, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 31,
+    "category": "food",
+    "setup": "She’s hungry.",
+    "options": ["Feed her", "Joke about it", "Say 'relax'", "Wait it out"],
+    "outcomes": {
+      "1": "Crisis avoided. +30 XP.",
+      "2": "She’s hungrier and angrier.",
+      "3": "Instant loss.",
+      "4": "No survivors."
+    },
+    "xp_range": [10, 35],
+    "rarity": "common"
+  },
+  {
+    "id": 32,
+    "category": "texting",
+    "setup": "She said 'brb' 3 hours ago.",
+    "options": ["Text again", "Wait forever", "Send meme", "Move on"],
+    "outcomes": {
+      "1": "Seen.",
+      "2": "Patience +2.",
+      "3": "She laughs. +20 XP.",
+      "4": "Inner peace achieved."
+    },
+    "xp_range": [10, 30],
+    "rarity": "common"
+  },
+  {
+    "id": 33,
+    "category": "mood",
+    "setup": "She’s looking through old texts.",
+    "options": ["Ask why", "Stay silent", "Say 'nostalgia hits'", "Delete chat"],
+    "outcomes": {
+      "1": "Now you’re both crying.",
+      "2": "Peace maintained.",
+      "3": "She smiles. +20 XP.",
+      "4": "She’s suspicious."
+    },
+    "xp_range": [10, 25],
+    "rarity": "rare"
+  },
+  {
+    "id": 34,
+    "category": "social",
+    "setup": "She follows a new guy.",
+    "options": ["Follow someone too", "Ask who he is", "Ignore it", "Uninstall app"],
+    "outcomes": {
+      "1": "Petty war started.",
+      "2": "Bad move.",
+      "3": "Maturity +30 XP.",
+      "4": "Peace by uninstall."
+    },
+    "xp_range": [10, 30],
+    "rarity": "common"
+  },
+  {
+    "id": 35,
+    "category": "random",
+    "setup": "She says 'I’m not like other girls.'",
+    "options": ["Agree", "Disagree", "Say 'true'", "Say 'I like other girls too'"],
+    "outcomes": {
+      "1": "Safe. +10 XP.",
+      "2": "She’s offended.",
+      "3": "Neutral zone.",
+      "4": "Instant elimination."
+    },
+    "xp_range": [10, 20],
+    "rarity": "common"
+  },
+  {
+    "id": 36,
+    "category": "birthday",
+    "setup": "She forgot your birthday.",
+    "options": ["Remind her", "Act normal", "Fake sadness", "Post story"],
+    "outcomes": {
+      "1": "Awkward silence.",
+      "2": "Better. +15 XP.",
+      "3": "Emotional guilt success.",
+      "4": "Now it’s public drama."
+    },
+    "xp_range": [10, 25],
+    "rarity": "rare"
+  },
+  {
+    "id": 37,
+    "category": "arguments",
+    "setup": "She says 'I’m done.'",
+    "options": ["Apologize", "Say 'same'", "Send paragraph", "Send dog meme"],
+    "outcomes": {
+      "1": "You live to fight again. +25 XP.",
+      "2": "Brave but foolish.",
+      "3": "Ignored paragraph.",
+      "4": "She laughs. Small win."
+    },
+    "xp_range": [10, 35],
+    "rarity": "common"
+  },
+  {
+    "id": 38,
+    "category": "mood",
+    "setup": "She says 'We never go out anymore.'",
+    "options": ["Plan date", "Say 'we went last week'", "Order food", "Blame work"],
+    "outcomes": {
+      "1": "Romantic points +40 XP.",
+      "2": "Wrong answer.",
+      "3": "Half credit.",
+      "4": "Excuses detected."
+    },
+    "xp_range": [10, 40],
+    "rarity": "rare"
+  },
+  {
+    "id": 39,
+    "category": "social",
+    "setup": "You forgot to reply to her comment.",
+    "options": ["Like it now", "Reply late", "Ignore", "Say 'algorithm ate it'"],
+    "outcomes": {
+      "1": "Too late.",
+      "2": "Suspiciously late. -5 XP.",
+      "3": "Passive tension.",
+      "4": "Blame accepted. +15 XP."
+    },
+    "xp_range": [10, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 40,
+    "category": "random",
+    "setup": "She says 'Guess what.'",
+    "options": ["Guess", "Say 'what'", "Say 'you tell me'", "Stay silent"],
+    "outcomes": {
+      "1": "Wrong guess, as always.",
+      "2": "Correct path. +15 XP.",
+      "3": "She rolls eyes.",
+      "4": "Confusion achieved."
+    },
+    "xp_range": [10, 20],
+    "rarity": "common"
+  },
+  {
+    "id": 41,
+    "category": "texting",
+    "setup": "She says 'we need space.'",
+    "options": ["Give space", "Ask how much", "Say 'okay'", "Double text later"],
+    "outcomes": {
+      "1": "Smart. +25 XP.",
+      "2": "She says 'forever maybe.'",
+      "3": "She blocks you temporarily.",
+      "4": "Bad timing."
+    },
+    "xp_range": [10, 30],
+    "rarity": "rare"
+  },
+  {
+    "id": 42,
+    "category": "food",
+    "setup": "She’s full but eats your fries.",
+    "options": ["Let her", "Complain", "Order extra", "Hide fries"],
+    "outcomes": {
+      "1": "Love sacrifice. +20 XP.",
+      "2": "Mistake.",
+      "3": "Genius. +25 XP.",
+      "4": "You’re single now."
+    },
+    "xp_range": [10, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 43,
+    "category": "mood",
+    "setup": "She says 'You never surprise me anymore.'",
+    "options": ["Plan trip", "Say 'surprise!'", "Buy flowers", "Say 'you hate surprises'"],
+    "outcomes": {
+      "1": "Major W. +40 XP.",
+      "2": "Failed humor attempt.",
+      "3": "Classic move. +25 XP.",
+      "4": "Logic doesn’t work here."
+    },
+    "xp_range": [15, 40],
+    "rarity": "rare"
+  },
+  {
+    "id": 44,
+    "category": "arguments",
+    "setup": "She says 'Whatever.'",
+    "options": ["Say 'same'", "Stay quiet", "Say 'fine'", "Send emoji"],
+    "outcomes": {
+      "1": "Double chaos.",
+      "2": "Good choice. +15 XP.",
+      "3": "Nuclear option.",
+      "4": "Neutral damage."
+    },
+    "xp_range": [10, 20],
+    "rarity": "common"
+  },
+  {
+    "id": 45,
+    "category": "social",
+    "setup": "She liked your old photo by mistake.",
+    "options": ["Tease her", "Say thanks", "Ignore", "Like hers back"],
+    "outcomes": {
+      "1": "She denies everything.",
+      "2": "Awkward.",
+      "3": "Smooth silence. +20 XP.",
+      "4": "Now it’s a like war."
+    },
+    "xp_range": [10, 25],
+    "rarity": "rare"
+  },
+  {
+    "id": 46,
+    "category": "random",
+    "setup": "She says 'We’ll talk later.'",
+    "options": ["Ask when", "Prepare apology", "Pretend not to hear", "Leave town"],
+    "outcomes": {
+      "1": "Wrong move.",
+      "2": "Preparation +10 XP.",
+      "3": "Denial isn’t strategy.",
+      "4": "Extreme but effective."
+    },
+    "xp_range": [10, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 47,
+    "category": "food",
+    "setup": "She wants to share a drink but takes 90%.",
+    "options": ["Say nothing", "Order two next time", "Call her out", "Take her fries"],
+    "outcomes": {
+      "1": "Love tax paid.",
+      "2": "Smart planning. +25 XP.",
+      "3": "Emotional damage.",
+      "4": "Petty war started."
+    },
+    "xp_range": [10, 30],
+    "rarity": "common"
+  },
+  {
+    "id": 48,
+    "category": "birthday",
+    "setup": "She remembers your birthday month wrong.",
+    "options": ["Correct her", "Laugh", "Fake surprise", "Post reminder story"],
+    "outcomes": {
+      "1": "She’s offended.",
+      "2": "Best move. +20 XP.",
+      "3": "Cute moment.",
+      "4": "Public tension."
+    },
+    "xp_range": [10, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 49,
+    "category": "arguments",
+    "setup": "She says 'I’m over it.'",
+    "options": ["Believe her", "Apologize again", "Say 'me too'", "Change topic"],
+    "outcomes": {
+      "1": "She isn’t.",
+      "2": "Good try. +15 XP.",
+      "3": "Now she’s not.",
+      "4": "Suspicious peace."
+    },
+    "xp_range": [10, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 50,
+    "category": "mood",
+    "setup": "She says 'I had a dream about you.'",
+    "options": ["Ask good or bad", "Say 'me too'", "Panic", "Ask if you survived"],
+    "outcomes": {
+      "1": "It was bad.",
+      "2": "She’s suspicious.",
+      "3": "Reasonable response.",
+      "4": "She laughs. +25 XP."
+    },
+    "xp_range": [10, 25],
+    "rarity": "rare"
+  },
+  {
+    "id": 51,
+    "category": "random",
+    "setup": "She says 'We need to take a break.'",
+    "options": ["Ask why", "Agree instantly", "Say 'from what?'", "Pretend call dropped"],
+    "outcomes": {
+      "1": "She can’t explain it either.",
+      "2": "She’s shocked you agreed.",
+      "3": "She says 'you know why'. You don’t.",
+      "4": "Smartest play. +25 XP."
+    },
+    "xp_range": [10, 30],
+    "rarity": "rare"
+  },
+  {
+    "id": 52,
+    "category": "arguments",
+    "setup": "She says 'You always do this.'",
+    "options": ["Apologize", "Ask 'do what?'", "Deny it", "Blame your zodiac"],
+    "outcomes": {
+      "1": "Good instinct. +20 XP.",
+      "2": "Now you’ve done it again.",
+      "3": "Instant loss.",
+      "4": "She oddly agrees. +15 XP."
+    },
+    "xp_range": [10, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 53,
+    "category": "mood",
+    "setup": "She texts 'leave me alone.'",
+    "options": ["Leave her alone", "Don’t", "Send heart", "Send meme"],
+    "outcomes": {
+      "1": "She’s mad you listened.",
+      "2": "She’s mad you didn’t.",
+      "3": "Mixed signals neutralized. +20 XP.",
+      "4": "Laugh detected. +15 XP."
+    },
+    "xp_range": [10, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 54,
+    "category": "social",
+    "setup": "She tags you in a meme about 'toxic boyfriends'.",
+    "options": ["Laugh", "Ask 'is this me?'", "Ignore", "Post a counter meme"],
+    "outcomes": {
+      "1": "She says 'if the shoe fits.'",
+      "2": "She says 'don’t take it personally.'",
+      "3": "Correct move. +20 XP.",
+      "4": "Social media war declared."
+    },
+    "xp_range": [10, 25],
+    "rarity": "rare"
+  },
+  {
+    "id": 55,
+    "category": "food",
+    "setup": "She’s watching diet videos while eating cake.",
+    "options": ["Say nothing", "Compliment her discipline", "Laugh", "Take her plate"],
+    "outcomes": {
+      "1": "Perfect silence. +25 XP.",
+      "2": "Sarcasm detected.",
+      "3": "You’re in danger.",
+      "4": "Game over."
+    },
+    "xp_range": [10, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 56,
+    "category": "texting",
+    "setup": "She says 'Read what I said again.'",
+    "options": ["Re-read", "Pretend you did", "Say 'I got it'", "Say 'explain pls'"],
+    "outcomes": {
+      "1": "You still missed the point.",
+      "2": "She knows you didn’t.",
+      "3": "She sends a paragraph. -10 XP.",
+      "4": "Slightly better. +15 XP."
+    },
+    "xp_range": [10, 20],
+    "rarity": "common"
+  },
+  {
+    "id": 57,
+    "category": "birthday",
+    "setup": "You sent a midnight text but she was asleep.",
+    "options": ["Apologize", "Say 'I tried'", "Call her now", "Wait till morning"],
+    "outcomes": {
+      "1": "She forgives. +20 XP.",
+      "2": "She says 'it’s the thought'.",
+      "3": "She’s mad. -5 XP.",
+      "4": "Peaceful move. +15 XP."
+    },
+    "xp_range": [10, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 58,
+    "category": "random",
+    "setup": "She asks 'What are we?'",
+    "options": ["Be honest", "Change topic", "Ask 'what do you think?'", "Say 'besties?'"],
+    "outcomes": {
+      "1": "She’s confused but impressed.",
+      "2": "She repeats question louder.",
+      "3": "Smart mirror move. +20 XP.",
+      "4": "She vanished. -10 XP."
+    },
+    "xp_range": [10, 25],
+    "rarity": "rare"
+  },
+  {
+    "id": 59,
+    "category": "arguments",
+    "setup": "She says 'You never appreciate me.'",
+    "options": ["Compliment her", "Say 'that’s not true'", "List things you did", "Panic"],
+    "outcomes": {
+      "1": "She melts. +35 XP.",
+      "2": "Bad start.",
+      "3": "She says 'those don’t count.'",
+      "4": "Correct reaction."
+    },
+    "xp_range": [15, 40],
+    "rarity": "rare"
+  },
+  {
+    "id": 60,
+    "category": "mood",
+    "setup": "She sighs loudly but says nothing.",
+    "options": ["Ask what's wrong", "Ignore", "Sigh back", "Offer coffee"],
+    "outcomes": {
+      "1": "She says 'nothing'. Everything.",
+      "2": "Wrong silence.",
+      "3": "Now both dramatic.",
+      "4": "Coffee diplomacy wins. +30 XP."
+    },
+    "xp_range": [10, 35],
+    "rarity": "common"
+  },
+  {
+    "id": 61,
+    "category": "random",
+    "setup": "She says 'You should’ve known.'",
+    "options": ["Apologize", "Guess wildly", "Say 'next time I will'", "Pretend memory loss"],
+    "outcomes": {
+      "1": "You did good. +20 XP.",
+      "2": "Wrong guess. Disaster.",
+      "3": "Reasonable. +15 XP.",
+      "4": "Suspicion intensifies."
+    },
+    "xp_range": [10, 25],
+    "rarity": "common"
+  },
+  {
+    "id": 62,
+    "category": "arguments",
+    "setup": "She says 'I don’t even care anymore' while clearly caring deeply.",
+    "options": ["Apologize again", "Say 'good to know'", "Stay silent", "Offer coffee"],
+    "outcomes": {
+      "1": "She sighs—still cares. +50 XP.",
+      "2": "You detonated a truth bomb. -25 XP.",
+      "3": "Silence saves you. +40 XP.",
+      "4": "Temporary truce achieved. +60 XP."
+    },
+    "xp_range": [40, 70],
+    "rarity": "ultra"
+  },
+  {
+    "id": 63,
+    "category": "mood",
+    "setup": "She posted sad lyrics but swears it’s 'just a song.'",
+    "options": ["Like the post", "DM her lyric meaning", "Ignore", "Post same lyrics"],
+    "outcomes": {
+      "1": "She says 'wow you noticed?' +35 XP.",
+      "2": "Overanalysis penalty. -10 XP.",
+      "3": "Neutral peace.",
+      "4": "Now it’s emotional warfare."
+    },
+    "xp_range": [20, 40],
+    "rarity": "rare"
+  },
+  {
+    "id": 64,
+    "category": "random",
+    "setup": "She says 'I miss who you used to be.'",
+    "options": ["Say 'same'", "Ask 'who was that'", "Apologize", "Change topic"],
+    "outcomes": {
+      "1": "Pain shared. +45 XP.",
+      "2": "She starts season-recap mode.",
+      "3": "Good instinct. +35 XP.",
+      "4": "Ignored reality unlocked."
+    },
+    "xp_range": [30, 50],
+    "rarity": "rare"
+  },
+  {
+    "id": 65,
+    "category": "texting",
+    "setup": "She deleted a long message before sending 'nvm'.",
+    "options": ["Ask what it was", "Say 'ok'", "Send eyes emoji", "Double text"],
+    "outcomes": {
+      "1": "She says 'doesn’t matter'. It did. -20 XP.",
+      "2": "Smart survival. +25 XP.",
+      "3": "She types again. +40 XP.",
+      "4": "Now she’s typing 'why are you asking?'."
+    },
+    "xp_range": [15, 45],
+    "rarity": "common"
+  },
+  {
+    "id": 66,
+    "category": "food",
+    "setup": "She’s angry mid-argument but still asks if you’re hungry.",
+    "options": ["Say no", "Say yes softly", "Ask if she’s hungry", "Order her favourite"],
+    "outcomes": {
+      "1": "Wrong answer. Starve for peace.",
+      "2": "She nods—tiny victory. +30 XP.",
+      "3": "She says 'that’s not the point'.",
+      "4": "Golden move. +60 XP."
+    },
+    "xp_range": [20, 60],
+    "rarity": "rare"
+  },
+  {
+    "id": 67,
+    "category": "arguments",
+    "setup": "She says 'It’s fine, I expected this.'",
+    "options": ["Ask what she expected", "Say 'I’m sorry'", "Say 'don’t do this'", "Stay silent"],
+    "outcomes": {
+      "1": "Now she expects an argument.",
+      "2": "Wise. +40 XP.",
+      "3": "Reverse psychology fails.",
+      "4": "Correct defense. +45 XP."
+    },
+    "xp_range": [30, 50],
+    "rarity": "ultra"
+  },
+  {
+    "id": 68,
+    "category": "social",
+    "setup": "Her best friend posted 'some men never change' and she liked it.",
+    "options": ["Pretend not to notice", "Ask if that’s about you", "Like it too", "Unfollow both"],
+    "outcomes": {
+      "1": "Smart ignorance. +35 XP.",
+      "2": "Trap triggered.",
+      "3": "Bold chaos. -20 XP.",
+      "4": "Cold war initiated."
+    },
+    "xp_range": [25, 45],
+    "rarity": "rare"
+  }, 
+  {
+    "id": 69,
+    "category": "mood",
+    "setup": "She’s quiet, scrolling, and you feel tension building. What now?",
+    "options": ["Ask gently", "Crack a joke", "Play music", "Stay silent"],
+    "outcomes": {
+      "1": "She opens up. +50 XP.",
+      "2": "Humor fails. -10 XP.",
+      "3": "Mood softens. +35 XP.",
+      "4": "Silence turns heavy."
+    },
+    "xp_range": [30, 60],
+    "rarity": "rare"
+  },
+  {
+    "id": 70,
+    "category": "arguments",
+    "setup": "She says 'I’m tired of explaining myself.'",
+    "options": ["Say 'I’m listening now'", "Explain your side", "Say nothing", "Send apology paragraph"],
+    "outcomes": {
+      "1": "Late but better than never. +55 XP.",
+      "2": "She interrupts. -15 XP.",
+      "3": "She appreciates silence. +40 XP.",
+      "4": "Overload detected."
+    },
+    "xp_range": [35, 60],
+    "rarity": "rare"
+  },
+  {
+    "id": 71,
+    "category": "random",
+    "setup": "She says 'Be honest, do you even care?'.",
+    "options": ["Say 'of course'", "Stay quiet", "Say 'depends'", "Answer deeply"],
+    "outcomes": {
+      "1": "She says 'then show it'. +45 XP.",
+      "2": "She nods sadly. -10 XP.",
+      "3": "She walks away. Game over.",
+      "4": "Emotional breakthrough! +70 XP."
+    },
+    "xp_range": [40, 70],
+    "rarity": "ultra"
+  },
+  {
+    "id": 72,
+    "category": "mood",
+    "setup": "She says 'I just need time.'",
+    "options": ["Give time", "Ask how long", "Say 'take all you need'", "Wait silently"],
+    "outcomes": {
+      "1": "Maturity unlocked. +60 XP.",
+      "2": "She says 'forget it.' -10 XP.",
+      "3": "Perfect tone. +55 XP.",
+      "4": "Peaceful ending."
+    },
+    "xp_range": [40, 60],
+    "rarity": "rare"
+  },
+
+  {
+    "id": 73,
+    "category": "arguments",
+    "setup": "She says 'You never change!' while listing 37 examples.",
+    "options": ["Apologize", "Say 'people evolve'", "Stay silent", "Compliment her memory"],
+    "outcomes": {
+      "1": "She sighs, battle cooldown begins. +70 XP.",
+      "2": "She says 'not like that'. -25 XP.",
+      "3": "Wise endurance. +60 XP.",
+      "4": "She pauses, slightly flattered. +50 XP."
+    },
+    "xp_range": [50, 80],
+    "rarity": "ultra"
+  },
+  {
+    "id": 74,
+    "category": "arguments",
+    "setup": "She says 'I don’t even know who you are anymore.'",
+    "options": ["Say 'same'", "Say 'still me'", "Apologize", "Ask who she wants you to be"],
+    "outcomes": {
+      "1": "Courageous honesty. +55 XP.",
+      "2": "Too logical. -10 XP.",
+      "3": "Emotional realism. +70 XP.",
+      "4": "Existential crisis achieved."
+    },
+    "xp_range": [50, 90],
+    "rarity": "ultra"
+  },
+  {
+    "id": 75,
+    "category": "arguments",
+    "setup": "She says 'You don’t get it.' for the fifth time.",
+    "options": ["Say 'help me understand'", "Say 'maybe I do'", "Stay silent", "Change subject"],
+    "outcomes": {
+      "1": "Small miracle. +80 XP.",
+      "2": "She says 'then why?' -15 XP.",
+      "3": "Safer route. +50 XP.",
+      "4": "Ignored emotions. -30 XP."
+    },
+    "xp_range": [50, 90],
+    "rarity": "ultra"
+  },
+  {
+    "id": 76,
+    "category": "mood",
+    "setup": "She whispers 'I’m tired'—not physically.",
+    "options": ["Hold her", "Say 'rest then'", "Ask 'of me?'", "Stay quiet"],
+    "outcomes": {
+      "1": "Connection restored. +100 XP.",
+      "2": "Misread the tone. -20 XP.",
+      "3": "Painful honesty achieved.",
+      "4": "Silence shared. +70 XP."
+    },
+    "xp_range": [60, 100],
+    "rarity": "ultra"
+  },
+  {
+    "id": 77,
+    "category": "arguments",
+    "setup": "She says 'You wouldn’t understand even if I explained.'",
+    "options": ["Ask her to try", "Say 'okay'", "Stay silent", "Say 'you’re right'"],
+    "outcomes": {
+      "1": "She explains angrily. +45 XP.",
+      "2": "She’s mad you gave up. -10 XP.",
+      "3": "Silent respect unlocked. +35 XP.",
+      "4": "She says 'see?'. Ouch."
+    },
+    "xp_range": [30, 50],
+    "rarity": "rare"
+  },
+  {
+    "id": 78,
+    "category": "mood",
+    "setup": "She says 'I’m not upset, I’m disappointed.'",
+    "options": ["Apologize deeply", "Make a joke", "Say 'it’s the same thing'", "Offer tea"],
+    "outcomes": {
+      "1": "Damage control success. +50 XP.",
+      "2": "She’s more disappointed.",
+      "3": "Wrong dictionary. -20 XP.",
+      "4": "Tea diplomacy works. +40 XP."
+    },
+    "xp_range": [35, 60],
+    "rarity": "rare"
+  },
+  {
+    "id": 79,
+    "category": "texting",
+    "setup": "You texted her twice, she replied with one-word answers.",
+    "options": ["Keep talking", "Stop texting", "Ask if she’s mad", "Send meme"],
+    "outcomes": {
+      "1": "She’s overwhelmed. -10 XP.",
+      "2": "Mystery silence unlocked. +25 XP.",
+      "3": "She says 'no'. Still yes.",
+      "4": "Neutral territory. +30 XP."
+    },
+    "xp_range": [15, 40],
+    "rarity": "common"
+  },
+  {
+    "id": 80,
+    "category": "food",
+    "setup": "She said she’s full but ordered dessert anyway.",
+    "options": ["Say nothing", "Comment jokingly", "Offer to share", "Refuse dessert"],
+    "outcomes": {
+      "1": "Perfect silence. +25 XP.",
+      "2": "She’s not amused.",
+      "3": "Romantic gesture. +45 XP.",
+      "4": "Bold mistake."
+    },
+    "xp_range": [20, 40],
+    "rarity": "common"
+  },
+  {
+    "id": 81,
+    "category": "social",
+    "setup": "She untagged herself from your photo.",
+    "options": ["Ask why", "Ignore", "Retag her", "Delete post"],
+    "outcomes": {
+      "1": "She says 'it’s not about you'. It is.",
+      "2": "Calm strategy. +35 XP.",
+      "3": "Passive-aggressive war.",
+      "4": "Crisis averted. +25 XP."
+    },
+    "xp_range": [20, 40],
+    "rarity": "rare"
+  },
+  {
+    "id": 82,
+    "category": "random",
+    "setup": "She says 'It’s fine, I just expected better.'",
+    "options": ["Apologize", "Say 'you deserve better'", "Ask 'from who?'", "Stay silent"],
+    "outcomes": {
+      "1": "Correct move. +50 XP.",
+      "2": "Dangerously honest. +30 XP.",
+      "3": "She says 'from you!'. -20 XP.",
+      "4": "Peace in denial. +25 XP."
+    },
+    "xp_range": [25, 50],
+    "rarity": "rare"
+  },
+  {
+    "id": 83,
+    "category": "mood",
+    "setup": "She sighs, looks at you, then says 'nothing'.",
+    "options": ["Ask again", "Hug her", "Say 'okay'", "Change subject"],
+    "outcomes": {
+      "1": "Repeat sigh. -10 XP.",
+      "2": "Small smile appears. +45 XP.",
+      "3": "She stares harder.",
+      "4": "Topic ignored, peace short-lived."
+    },
+    "xp_range": [20, 50],
+    "rarity": "common"
+  },
+  {
+    "id": 84,
+    "category": "birthday",
+    "setup": "You forgot her dog's birthday.",
+    "options": ["Apologize sincerely", "Buy toy", "Say 'he won’t remember'", "Laugh it off"],
+    "outcomes": {
+      "1": "She forgives but remembers. +30 XP.",
+      "2": "Redemption through plushie. +40 XP.",
+      "3": "You made it worse.",
+      "4": "Humor backfired."
+    },
+    "xp_range": [20, 40],
+    "rarity": "rare"
+  },
+  {
+    "id": 85,
+    "category": "social",
+    "setup": "She archived all your photos together.",
+    "options": ["Ask why", "Pretend not to notice", "Archive yours too", "Post new one"],
+    "outcomes": {
+      "1": "She says 'just cleaning up'. Ominous.",
+      "2": "Correct emotional strategy. +40 XP.",
+      "3": "Petty war begins.",
+      "4": "Bravery. -15 XP."
+    },
+    "xp_range": [25, 45],
+    "rarity": "rare"
+  },
+  {
+    "id": 86,
+    "category": "arguments",
+    "setup": "She says 'you never pay attention'.",
+    "options": ["Repeat last 3 words", "Apologize", "Say 'I do!'", "Stay quiet"],
+    "outcomes": {
+      "1": "Good save. +35 XP.",
+      "2": "Soft landing. +25 XP.",
+      "3": "Defensive fail. -10 XP.",
+      "4": "Silence is suspicious."
+    },
+    "xp_range": [20, 40],
+    "rarity": "common"
+  },
+  {
+    "id": 87,
+    "category": "food",
+    "setup": "She cooked something new and asked your honest opinion.",
+    "options": ["Be honest", "Say 'perfect'", "Say 'needs salt'", "Smile silently"],
+    "outcomes": {
+      "1": "Honesty hurts. -15 XP.",
+      "2": "She knows you’re lying. +25 XP.",
+      "3": "She frowns. -10 XP.",
+      "4": "Confusingly safe. +30 XP."
+    },
+    "xp_range": [15, 35],
+    "rarity": "common"
+  },
+  {
+    "id": 88,
+    "category": "texting",
+    "setup": "She says 'you didn’t even notice my new hair'.",
+    "options": ["Compliment instantly", "Say 'I did!'", "Apologize", "Guess the color"],
+    "outcomes": {
+      "1": "Too late but appreciated. +40 XP.",
+      "2": "She says 'when?'. -5 XP.",
+      "3": "Classic recovery. +30 XP.",
+      "4": "Wrong color. Catastrophic."
+    },
+    "xp_range": [20, 40],
+    "rarity": "rare"
+  },
+  {
+    "id": 89,
+    "category": "random",
+    "setup": "She’s mad and says 'don’t talk to me.' Do you?",
+    "options": ["Respect space", "Send apology text", "Show up anyway", "Wait it out"],
+    "outcomes": {
+      "1": "She says 'wow you listened?'. +40 XP.",
+      "2": "She replies 'leave me alone'.",
+      "3": "Too brave. -20 XP.",
+      "4": "Patience rewarded. +50 XP."
+    },
+    "xp_range": [30, 60],
+    "rarity": "rare"
+  },
+  {
+    "id": 90,
+    "category": "mood",
+    "setup": "She says 'you changed' after you improved your habits.",
+    "options": ["Say 'for us'", "Say 'growth hurts'", "Say 'sorry'", "Say nothing"],
+    "outcomes": {
+      "1": "Wise answer. +55 XP.",
+      "2": "She softens. +40 XP.",
+      "3": "Neutral outcome.",
+      "4": "She feels unseen. -10 XP."
+    },
+    "xp_range": [35, 60],
+    "rarity": "rare"
+  },
+  {
+    "id": 91,
+    "category": "arguments",
+    "setup": "She says 'I don’t even know why I try.'",
+    "options": ["Thank her for trying", "Say 'me neither'", "Apologize", "Stay quiet"],
+    "outcomes": {
+      "1": "Emotional maturity unlocked. +60 XP.",
+      "2": "Instant doom.",
+      "3": "Safe route. +40 XP.",
+      "4": "She assumes you don’t care. -15 XP."
+    },
+    "xp_range": [40, 65],
+    "rarity": "ultra"
+  },
+  {
+    "id": 92,
+    "category": "mood",
+    "setup": "She texts 'I don’t need anything.' but clearly does.",
+    "options": ["Send food", "Send playlist", "Call her", "Say 'okay'"],
+    "outcomes": {
+      "1": "Food = peace. +60 XP.",
+      "2": "Emotional connection! +50 XP.",
+      "3": "Voice helps. +45 XP.",
+      "4": "She says 'you don’t care'. -20 XP."
+    },
+    "xp_range": [35, 60],
+    "rarity": "rare"
+  },
+  {
+    "id": 93,
+    "category": "random",
+    "setup": "She asks 'Why do you love me?'",
+    "options": ["Answer sincerely", "Say 'why not?'", "List reasons", "Freeze"],
+    "outcomes": {
+      "1": "Heart unlock. +80 XP.",
+      "2": "Bad sarcasm. -15 XP.",
+      "3": "She tears up. +70 XP.",
+      "4": "She’s disappointed. -10 XP."
+    },
+    "xp_range": [50, 80],
+    "rarity": "ultra"
+  },
+  {
+    "id": 94,
+    "category": "arguments",
+    "setup": "She says 'Forget it, I’ll do it myself.'",
+    "options": ["Offer help again", "Say 'okay'", "Say 'fine'", "Do it secretly"],
+    "outcomes": {
+      "1": "Persistence pays. +60 XP.",
+      "2": "Disappointment rises.",
+      "3": "Explosion imminent. -25 XP.",
+      "4": "Hero move. +55 XP."
+    },
+    "xp_range": [35, 60],
+    "rarity": "rare"
+  },
+  {
+    "id": 95,
+    "category": "mood",
+    "setup": "She says 'I’m not angry, just hurt.'",
+    "options": ["Apologize sincerely", "Defend yourself", "Stay quiet", "Say 'same'"],
+    "outcomes": {
+      "1": "Healing begins. +65 XP.",
+      "2": "Hurt increases. -25 XP.",
+      "3": "Silence respected. +45 XP.",
+      "4": "Wrong mirror move."
+    },
+    "xp_range": [40, 70],
+    "rarity": "ultra"
+  },
+  {
+    "id": 96,
+    "category": "arguments",
+    "setup": "She says 'This is why I never open up.'",
+    "options": ["Apologize immediately", "Say 'I’m listening now'", "Say 'I didn’t mean it'", "Stay quiet"],
+    "outcomes": {
+      "1": "Partial trust restored. +75 XP.",
+      "2": "Emotional growth +80 XP.",
+      "3": "She nods sadly.",
+      "4": "You lost connection. -30 XP."
+    },
+    "xp_range": [50, 90],
+    "rarity": "ultra"
+  },
+  {
+    "id": 97,
+    "category": "arguments",
+    "setup": "She says 'I just wanted you to care without being told.'",
+    "options": ["Say 'you’re right'", "Say 'teach me'", "Apologize", "Explain yourself"],
+    "outcomes": {
+      "1": "Acceptance achieved. +80 XP.",
+      "2": "She smiles softly. +90 XP.",
+      "3": "Safe play. +60 XP.",
+      "4": "Overthinking detected. -20 XP."
+    },
+    "xp_range": [60, 90],
+    "rarity": "ultra"
+  },
+  {
+    "id": 98,
+    "category": "mood",
+    "setup": "She says 'You make me feel invisible.'",
+    "options": ["Say 'I see you now'", "Hold her", "Say 'you’re not'", "Stay quiet"],
+    "outcomes": {
+      "1": "True connection. +100 XP.",
+      "2": "Tears + peace. +90 XP.",
+      "3": "Too logical. -10 XP.",
+      "4": "Missed emotional cue."
+    },
+    "xp_range": [60, 100],
+    "rarity": "ultra"
+  },
+  {
+    "id": 99,
+    "category": "random",
+    "setup": "She says 'You made me this way.'",
+    "options": ["Apologize", "Say 'maybe we both did'", "Defend yourself", "Say 'then let’s fix it'"],
+    "outcomes": {
+      "1": "Good start. +75 XP.",
+      "2": "Mature reflection. +85 XP.",
+      "3": "Explosion x2. -20 XP.",
+      "4": "True progress. +100 XP."
+    },
+    "xp_range": [60, 100],
+    "rarity": "ultra"
+  },
+  {
+    "id": 100,
+    "category": "arguments",
+    "setup": "She says 'You never fight for me.'",
+    "options": ["Say 'I’m here now'", "Say 'I thought I was'", "Apologize", "Stay quiet"],
+    "outcomes": {
+      "1": "Emotional redemption. +95 XP.",
+      "2": "She says 'not like this.' -15 XP.",
+      "3": "Still counts. +70 XP.",
+      "4": "She walks away. -20 XP."
+    },
+    "xp_range": [50, 100],
+    "rarity": "ultra"
+  },
+  {
+    "id": 101,
+    "category": "mood",
+    "setup": "She says 'I miss us.'",
+    "options": ["Say 'we’re still us'", "Say 'I miss you too'", "Stay silent", "Make a plan to meet"],
+    "outcomes": {
+      "1": "She smiles. +90 XP.",
+      "2": "Heart restored. +100 XP.",
+      "3": "Tearful silence.",
+      "4": "Hope reborn. +110 XP."
+    },
+    "xp_range": [70, 110],
+    "rarity": "ultra"
+  },
+  {
+    "id": 102,
+    "category": "arguments",
+    "setup": "She says 'It’s always about you.'",
+    "options": ["Apologize", "Say 'not true'", "Ask what she means", "Stay silent"],
+    "outcomes": {
+      "1": "Damage reduced. +55 XP.",
+      "2": "She lists examples. -25 XP.",
+      "3": "Extended debate. -10 XP.",
+      "4": "Silence = survival. +40 XP."
+    },
+    "xp_range": [30, 55],
+    "rarity": "rare"
+  },
+  {
+    "id": 103,
+    "category": "mood",
+    "setup": "She posts a meme about loyalty after a small fight.",
+    "options": ["Like it", "Comment a heart", "Ignore", "Post a meme back"],
+    "outcomes": {
+      "1": "She notices. +25 XP.",
+      "2": "Now you’re suspicious. -15 XP.",
+      "3": "Peace preserved. +30 XP.",
+      "4": "Meme war unlocked."
+    },
+    "xp_range": [20, 40],
+    "rarity": "common"
+  },
+  {
+    "id": 104,
+    "category": "food",
+    "setup": "She says 'I don’t want fries' then eats all yours.",
+    "options": ["Offer them", "Complain", "Order extra", "Hide them"],
+    "outcomes": {
+      "1": "Smart sacrifice. +40 XP.",
+      "2": "Bold error. -20 XP.",
+      "3": "Genius foresight. +45 XP.",
+      "4": "You’re single again."
+    },
+    "xp_range": [25, 45],
+    "rarity": "common"
+  },
+  {
+    "id": 105,
+    "category": "texting",
+    "setup": "She replies 'sure 👍'.",
+    "options": ["Reply 'great!'", "Send gif", "Call her", "Say 'you seem upset'"],
+    "outcomes": {
+      "1": "Emoji rage triggered.",
+      "2": "Humor saves. +30 XP.",
+      "3": "Risky but heartfelt. +40 XP.",
+      "4": "She says 'no I’m fine'. -10 XP."
+    },
+    "xp_range": [20, 40],
+    "rarity": "common"
+  },
+  {
+    "id": 106,
+    "category": "random",
+    "setup": "She says 'You wouldn’t last a day in my shoes.'",
+    "options": ["Agree instantly", "Say 'try me'", "Make a joke", "Stay quiet"],
+    "outcomes": {
+      "1": "Wise humility. +35 XP.",
+      "2": "Competition begins. -15 XP.",
+      "3": "She’s unamused.",
+      "4": "Safe silence. +25 XP."
+    },
+    "xp_range": [20, 40],
+    "rarity": "common"
+  },
+  {
+    "id": 107,
+    "category": "arguments",
+    "setup": "She says 'I don’t trust you anymore.'",
+    "options": ["Ask why", "Say 'you can'", "Apologize", "Prove it"],
+    "outcomes": {
+      "1": "Painful talk begins. +45 XP.",
+      "2": "She says 'words mean nothing'. -10 XP.",
+      "3": "Correct first step. +55 XP.",
+      "4": "Actions pending..."
+    },
+    "xp_range": [30, 60],
+    "rarity": "ultra"
+  },
+  {
+    "id": 108,
+    "category": "social",
+    "setup": "She says 'I saw your old tweets.'",
+    "options": ["Delete account", "Explain", "Laugh nervously", "Say 'history lesson!'"],
+    "outcomes": {
+      "1": "Clean slate +40 XP.",
+      "2": "She’s unconvinced. -15 XP.",
+      "3": "She raises eyebrow.",
+      "4": "Sarcasm failure. -10 XP."
+    },
+    "xp_range": [25, 45],
+    "rarity": "rare"
+  },
+  {
+    "id": 109,
+    "category": "mood",
+    "setup": "She says 'I’m fine' while cleaning aggressively.",
+    "options": ["Offer help", "Run", "Say 'need a break?'", "Turn music on"],
+    "outcomes": {
+      "1": "Smart empathy. +50 XP.",
+      "2": "Coward’s path. -5 XP.",
+      "3": "She pauses. +35 XP.",
+      "4": "Wrong soundtrack."
+    },
+    "xp_range": [25, 50],
+    "rarity": "rare"
+  },
+  {
+    "id": 110,
+    "category": "random",
+    "setup": "She says 'I’m not mad, I just lost respect.'",
+    "options": ["Apologize", "Ask if it’s repairable", "Say 'that hurts'", "Change topic"],
+    "outcomes": {
+      "1": "Wise humility. +60 XP.",
+      "2": "Real talk unlocked. +70 XP.",
+      "3": "Honesty recognized. +50 XP.",
+      "4": "Avoidance fail. -25 XP."
+    },
+    "xp_range": [50, 70],
+    "rarity": "ultra"
+  },
+  {
+    "id": 111,
+    "category": "food",
+    "setup": "She spent hours cooking but it’s inedible.",
+    "options": ["Eat anyway", "Say 'delicious'", "Order secretly", "Be honest"],
+    "outcomes": {
+      "1": "Love > taste. +40 XP.",
+      "2": "She knows but smiles. +30 XP.",
+      "3": "Caught ordering. -20 XP.",
+      "4": "Truth hurts. -15 XP."
+    },
+    "xp_range": [20, 45],
+    "rarity": "common"
+  },
+  {
+    "id": 112,
+    "category": "birthday",
+    "setup": "She says 'don’t get me anything.'",
+    "options": ["Believe her", "Get something small", "Ask again", "Surprise her"],
+    "outcomes": {
+      "1": "Rookie mistake. -20 XP.",
+      "2": "Acceptable move. +35 XP.",
+      "3": "She says 'I said nothing!'",
+      "4": "Correct paradox. +60 XP."
+    },
+    "xp_range": [30, 60],
+    "rarity": "rare"
+  },
+  {
+    "id": 113,
+    "category": "texting",
+    "setup": "You double-texted. She hasn’t seen the first yet.",
+    "options": ["Delete both", "Send meme", "Pretend glitch", "Wait"],
+    "outcomes": {
+      "1": "Too late. -10 XP.",
+      "2": "Recovery +25 XP.",
+      "3": "She laughs. +35 XP.",
+      "4": "Peace through patience. +30 XP."
+    },
+    "xp_range": [20, 40],
+    "rarity": "common"
+  },
+  {
+    "id": 114,
+    "category": "mood",
+    "setup": "She says 'I need to figure myself out.'",
+    "options": ["Support her", "Say 'I’ll help'", "Ask if you’re included", "Say 'take your time'"],
+    "outcomes": {
+      "1": "Maturity win. +65 XP.",
+      "2": "She says 'that’s not the point'. -10 XP.",
+      "3": "Risky question. -15 XP.",
+      "4": "Perfect response. +70 XP."
+    },
+    "xp_range": [50, 70],
+    "rarity": "rare"
+  },
+  {
+    "id": 115,
+    "category": "arguments",
+    "setup": "She says 'You’re emotionally unavailable.'",
+    "options": ["Admit it", "Defend yourself", "Ask how", "Apologize"],
+    "outcomes": {
+      "1": "Self-awareness +70 XP.",
+      "2": "She says 'see?'. -20 XP.",
+      "3": "Therapy mode unlocked. +55 XP.",
+      "4": "Soft apology helps. +60 XP."
+    },
+    "xp_range": [45, 70],
+    "rarity": "ultra"
+  },
+  {
+    "id": 116,
+    "category": "random",
+    "setup": "She says 'You’re not the same anymore.'",
+    "options": ["Say 'people grow'", "Say 'you changed too'", "Apologize", "Stay quiet"],
+    "outcomes": {
+      "1": "Healthy answer. +60 XP.",
+      "2": "Wrong counter. -10 XP.",
+      "3": "Good humility. +45 XP.",
+      "4": "She feels unheard. -20 XP."
+    },
+    "xp_range": [40, 60],
+    "rarity": "rare"
+  },
+  {
+    "id": 117,
+    "category": "mood",
+    "setup": "She says 'Do you even know what I need?'",
+    "options": ["Guess", "Ask sincerely", "Say 'tell me'", "Stay quiet"],
+    "outcomes": {
+      "1": "Wrong guess. -10 XP.",
+      "2": "Growth detected. +60 XP.",
+      "3": "Honest and safe. +55 XP.",
+      "4": "She sighs."
+    },
+    "xp_range": [45, 65],
+    "rarity": "rare"
+  },
+  {
+    "id": 118,
+    "category": "social",
+    "setup": "She says 'Everyone warned me about you.'",
+    "options": ["Say 'they were wrong'", "Say 'guess they were right'", "Apologize", "Laugh"],
+    "outcomes": {
+      "1": "Confidence bonus +70 XP.",
+      "2": "Too honest. -15 XP.",
+      "3": "Partial redemption +60 XP.",
+      "4": "She’s not laughing."
+    },
+    "xp_range": [45, 70],
+    "rarity": "ultra"
+  },
+  {
+    "id": 119,
+    "category": "arguments",
+    "setup": "She says 'Why can’t you be like before?'",
+    "options": ["Ask 'which before?'", "Apologize", "Say 'I’m still me'", "Stay quiet"],
+    "outcomes": {
+      "1": "Trap. -20 XP.",
+      "2": "Peace offering. +45 XP.",
+      "3": "Mild success. +50 XP.",
+      "4": "She stares, nostalgic."
+    },
+    "xp_range": [40, 60],
+    "rarity": "rare"
+  },
+  {
+    "id": 120,
+    "category": "random",
+    "setup": "She says 'You only care when I’m upset.'",
+    "options": ["Say 'not true'", "Apologize", "Prove her wrong", "Send long text"],
+    "outcomes": {
+      "1": "Defensive fail. -15 XP.",
+      "2": "Good start. +45 XP.",
+      "3": "She’s emotional. +55 XP.",
+      "4": "Paragraph ignored."
+    },
+    "xp_range": [35, 60],
+    "rarity": "rare"
+  },
+  {
+    "id": 121,
+    "category": "mood",
+    "setup": "She says 'I feel alone even when you’re here.'",
+    "options": ["Hold her", "Say 'I’m sorry'", "Ask 'how can I fix it'", "Stay silent"],
+    "outcomes": {
+      "1": "Connection restored. +80 XP.",
+      "2": "Gentle step. +65 XP.",
+      "3": "Perfect answer. +85 XP.",
+      "4": "Silence hurts. -25 XP."
+    },
+    "xp_range": [60, 85],
+    "rarity": "ultra"
+  },
+  {
+    "id": 122,
+    "category": "arguments",
+    "setup": "She says 'I’m tired of being the only one trying.'",
+    "options": ["Apologize deeply", "Say 'I’ll try harder'", "Say 'that’s not fair'", "Stay quiet"],
+    "outcomes": {
+      "1": "Effort recognized. +80 XP.",
+      "2": "Hope revived. +90 XP.",
+      "3": "Argument extends. -30 XP.",
+      "4": "Missed chance."
+    },
+    "xp_range": [60, 90],
+    "rarity": "ultra"
+  },
+  {
+    "id": 123,
+    "category": "mood",
+    "setup": "She says 'Sometimes I wish you knew without me telling you.'",
+    "options": ["Say 'I’m learning'", "Say 'that’s impossible'", "Apologize", "Guess"],
+    "outcomes": {
+      "1": "Perfect maturity. +95 XP.",
+      "2": "Logic failed. -20 XP.",
+      "3": "Safe +70 XP.",
+      "4": "Wrong guess. -15 XP."
+    },
+    "xp_range": [70, 95],
+    "rarity": "ultra"
+  },
+  {
+    "id": 124,
+    "category": "arguments",
+    "setup": "She says 'You only say sorry to end the fight.'",
+    "options": ["Say 'this time I mean it'", "Stay quiet", "Say 'that’s not true'", "Show actions"],
+    "outcomes": {
+      "1": "Slight trust. +80 XP.",
+      "2": "Neutral fade. +50 XP.",
+      "3": "She says 'exactly!'. -25 XP.",
+      "4": "Respect earned. +90 XP."
+    },
+    "xp_range": [60, 90],
+    "rarity": "ultra"
+  },
+  {
+    "id": 125,
+    "category": "random",
+    "setup": "She says 'If you really wanted, you would.'",
+    "options": ["Say 'you’re right'", "Say 'explain'", "Apologize", "Do it immediately"],
+    "outcomes": {
+      "1": "Agreement = peace. +85 XP.",
+      "2": "Debate unlocked. -20 XP.",
+      "3": "Good humility. +70 XP.",
+      "4": "Hero move. +100 XP."
+    },
+    "xp_range": [70, 100],
+    "rarity": "ultra"
+  },
+  {
+    "id": 126,
+    "category": "mood",
+    "setup": "She says 'You make everything about fixing instead of feeling.'",
+    "options": ["Say 'teach me to feel'", "Apologize", "Say 'I’m trying'", "Stay quiet"],
+    "outcomes": {
+      "1": "Emotional enlightenment. +100 XP.",
+      "2": "Correct humility. +80 XP.",
+      "3": "Good intent, weak delivery. +65 XP.",
+      "4": "Missed connection."
+    },
+    "xp_range": [70, 100],
+    "rarity": "ultra"
+  },
+  {
+    "id": 127,
+    "category": "arguments",
+    "setup": "She says 'I’m exhausted of repeating myself.'",
+    "options": ["Say 'I hear you now'", "Apologize", "Say 'you’re overreacting'", "Stay silent"],
+    "outcomes": {
+      "1": "Trust rebuild +95 XP.",
+      "2": "Safe option +80 XP.",
+      "3": "Explosion. -40 XP.",
+      "4": "Too quiet. -10 XP."
+    },
+    "xp_range": [70, 95],
+    "rarity": "ultra"
+  },
+  {
+    "id": 128,
+    "category": "random",
+    "setup": "She says 'I used to feel lucky.'",
+    "options": ["Say 'you still are'", "Say 'I’ll fix that'", "Apologize", "Say 'me too'"],
+    "outcomes": {
+      "1": "Wrong tone. -20 XP.",
+      "2": "Determined redemption. +90 XP.",
+      "3": "Good emotional repair. +85 XP.",
+      "4": "Bittersweet peace. +80 XP."
+    },
+    "xp_range": [70, 90],
+    "rarity": "ultra"
+  },
+  {
+    "id": 129,
+    "category": "mood",
+    "setup": "She says 'You used to make me laugh more.'",
+    "options": ["Crack a joke", "Say 'I’ll try again'", "Apologize", "Stay quiet"],
+    "outcomes": {
+      "1": "Joke fails. -15 XP.",
+      "2": "Sweet recovery. +75 XP.",
+      "3": "Safe +65 XP.",
+      "4": "Silence heavy."
+    },
+    "xp_range": [60, 80],
+    "rarity": "ultra"
+  },
+  {
+  "id": 130,
+  "category": "arguments",
+  "setup": "She says 'You always make promises but never follow through.'",
+  "options": ["Apologize sincerely", "Say 'I will this time'", "List what you did", "Stay silent"],
+  "outcomes": {
+    "1": "Accountability accepted. +75 XP.",
+    "2": "Hope rises. +65 XP.",
+    "3": "Defensive mistake. -25 XP.",
+    "4": "She says 'exactly my point'. -15 XP."
+  },
+  "xp_range": [55, 80],
+  "rarity": "ultra"
+  },
+  {
+    "id": 131,
+    "category": "random",
+    "setup": "She says 'I feel like I'm doing this alone.'",
+    "options": ["Ask how to help", "Say 'you're not'", "Apologize", "Stay quiet"],
+    "outcomes": {
+      "1": "She offers ideas. +80 XP.",
+      "2": "Sincere but light. +60 XP.",
+      "3": "Opens a door. +70 XP.",
+      "4": "Silence hangs heavy. -20 XP."
+    },
+    "xp_range": [60, 85],
+    "rarity": "ultra"
+  },
+  {
+    "id": 132,
+    "category": "mood",
+    "setup": "She texts 'I need honesty.'",
+    "options": ["Be honest", "Be gentle", "Refuse", "Ask what she means"],
+    "outcomes": {
+      "1": "Hard truth accepted. +75 XP.",
+      "2": "Truth with care. +85 XP.",
+      "3": "Trust broken. -40 XP.",
+      "4": "Clarification helps. +50 XP."
+    },
+    "xp_range": [50, 85],
+    "rarity": "ultra"
+  },
+  {
+    "id": 133,
+    "category": "arguments",
+    "setup": "She says 'You're always defensive.'",
+    "options": ["Acknowledge it", "Defend harder", "Ask for examples", "Stay silent"],
+    "outcomes": {
+      "1": "Self-awareness gains trust. +70 XP.",
+      "2": "Escalation. -30 XP.",
+      "3": "Constructive path. +60 XP.",
+      "4": "Temporary calm. +35 XP."
+    },
+    "xp_range": [45, 75],
+    "rarity": "rare"
+  },
+  {
+    "id": 134,
+    "category": "food",
+    "setup": "She says 'I hate being rushed.' during brunch.",
+    "options": ["Slow down", "Apologize", "Ignore the time", "Make a joke"],
+    "outcomes": {
+      "1": "She smiles. +45 XP.",
+      "2": "Damage limited. +30 XP.",
+      "3": "You learn patience. +55 XP.",
+      "4": "Humor misfires. -10 XP."
+    },
+    "xp_range": [30, 55],
+    "rarity": "common"
+  },
+  {
+    "id": 135,
+    "category": "texting",
+    "setup": "She says 'We need boundaries.'",
+    "options": ["Ask which", "Say 'agreed'", "Dismiss it", "Say 'I’ll change'"],
+    "outcomes": {
+      "1": "Clarity achieved. +65 XP.",
+      "2": "Starting point. +50 XP.",
+      "3": "Backlash. -25 XP.",
+      "4": "Optimistic but vague. +40 XP."
+    },
+    "xp_range": [40, 70],
+    "rarity": "rare"
+  },
+  {
+    "id": 136,
+    "category": "social",
+    "setup": "She says 'Why didn’t you introduce me properly?'",
+    "options": ["Apologize", "Explain nervousness", "Laugh it off", "Stay quiet"],
+    "outcomes": {
+      "1": "Respect regained. +55 XP.",
+      "2": "She appreciates honesty. +45 XP.",
+      "3": "She’s annoyed. -15 XP.",
+      "4": "Missed chance. -10 XP."
+    },
+    "xp_range": [35, 60],
+    "rarity": "rare"
+  },
+  {
+    "id": 137,
+    "category": "mood",
+    "setup": "She says 'Sometimes I think we're different people.'",
+    "options": ["Ask 'how?'", "Say 'we can learn'", "Panic", "Stay calm"],
+    "outcomes": {
+      "1": "Conversation begins. +60 XP.",
+      "2": "Hopeful move. +50 XP.",
+      "3": "Bad panic. -30 XP.",
+      "4": "Stability wins. +40 XP."
+    },
+    "xp_range": [40, 65],
+    "rarity": "rare"
+  },
+  {
+    "id": 138,
+    "category": "random",
+    "setup": "She says 'I hate when you do that.' pointing at a habit.",
+    "options": ["Stop immediately", "Ask why", "Say 'I’ll try'", "Make joke"],
+    "outcomes": {
+      "1": "Immediate relief. +55 XP.",
+      "2": "Deeper talk starts. +45 XP.",
+      "3": "She feels heard. +50 XP.",
+      "4": "Misread tone. -10 XP."
+    },
+    "xp_range": [35, 60],
+    "rarity": "common"
+  },
+  {
+    "id": 139,
+    "category": "arguments",
+    "setup": "She says 'You don't prioritize us.'",
+    "options": ["Ask examples", "Apologize", "Promise to change", "Ignore"],
+    "outcomes": {
+      "1": "Constructive route. +65 XP.",
+      "2": "Soft landing. +55 XP.",
+      "3": "Needs proof. +40 XP.",
+      "4": "Dangerous silence. -35 XP."
+    },
+    "xp_range": [45, 75],
+    "rarity": "ultra"
+  },
+  {
+    "id": 140,
+    "category": "food",
+    "setup": "She always takes the last slice. You call it out.",
+    "options": ["Laugh it off", "Share it", "Keep quiet", "Make a rule"],
+    "outcomes": {
+      "1": "She teases back. +30 XP.",
+      "2": "Sharing restores peace. +40 XP.",
+      "3": "Passive tension. -10 XP.",
+      "4": "New tradition formed. +35 XP."
+    },
+    "xp_range": [20, 40],
+    "rarity": "common"
+  },
+  {
+    "id": 141,
+    "category": "texting",
+    "setup": "She sends a voice note instead of text.",
+    "options": ["Listen immediately", "Delay", "Reply with text", "Ignore"],
+    "outcomes": {
+      "1": "She feels valued. +40 XP.",
+      "2": "She fears neglect. -15 XP.",
+      "3": "Mixed signal. +20 XP.",
+      "4": "Ignored feelings. -25 XP."
+    },
+    "xp_range": [25, 50],
+    "rarity": "common"
+  },
+  {
+    "id": 142,
+    "category": "mood",
+    "setup": "She says 'I need reassurance.'",
+    "options": ["Give it", "Ask why", "Say 'prove it'", "Say nothing"],
+    "outcomes": {
+      "1": "Immediate calm. +60 XP.",
+      "2": "Deeper talk begins. +45 XP.",
+      "3": "Wrong direction. -30 XP.",
+      "4": "Silence damages. -20 XP."
+    },
+    "xp_range": [40, 70],
+    "rarity": "rare"
+  },
+  {
+    "id": 143,
+    "category": "random",
+    "setup": "She says 'I can't believe you're like this.'",
+    "options": ["Ask what she expects", "Say 'I’m trying'", "Laugh nervously", "Stay quiet"],
+    "outcomes": {
+      "1": "Productive talk. +55 XP.",
+      "2": "Sincere but incomplete. +40 XP.",
+      "3": "Awkwardness. -10 XP.",
+      "4": "Tension grows. -20 XP."
+    },
+    "xp_range": [35, 60],
+    "rarity": "common"
+  },
+  {
+    "id": 144,
+    "category": "social",
+    "setup": "She mentions an ex in passing.",
+    "options": ["Ask why", "Say 'it means nothing'", "Ignore", "Joke about it"],
+    "outcomes": {
+      "1": "She opens up. +50 XP.",
+      "2": "She sighs. -10 XP.",
+      "3": "Peace preserved. +30 XP.",
+      "4": "Joke backfires. -15 XP."
+    },
+    "xp_range": [30, 55],
+    "rarity": "common"
+  },
+  {
+    "id": 145,
+    "category": "mood",
+    "setup": "She says 'I feel small sometimes.'",
+    "options": ["Comfort her", "Ask why", "Tell her she's strong", "Stay silent"],
+    "outcomes": {
+      "1": "She feels held. +80 XP.",
+      "2": "Deep conversation. +60 XP.",
+      "3": "She smiles. +50 XP.",
+      "4": "Missed opportunity. -25 XP."
+    },
+    "xp_range": [60, 85],
+    "rarity": "ultra"
+  },
+  {
+    "id": 146,
+    "category": "arguments",
+    "setup": "She says 'I need more from you emotionally.'",
+    "options": ["Ask what 'more' is", "Promise change", "Say 'I tried'", "Stay quiet"],
+    "outcomes": {
+      "1": "Clear map created. +75 XP.",
+      "2": "Intentions set. +60 XP.",
+      "3": "Defensive tone. -20 XP.",
+      "4": "Silence hurts. -30 XP."
+    },
+    "xp_range": [50, 80],
+    "rarity": "ultra"
+  },
+  {
+    "id": 147,
+    "category": "random",
+    "setup": "She says 'I wish you'd remember small things.'",
+    "options": ["Ask examples", "Try to remember", "Apologize", "Make a ritual"],
+    "outcomes": {
+      "1": "She feels heard. +65 XP.",
+      "2": "Effort appreciated. +55 XP.",
+      "3": "Sincere move. +50 XP.",
+      "4": "New habit formed. +60 XP."
+    },
+    "xp_range": [45, 70],
+    "rarity": "rare"
+  },
+  {
+    "id": 148,
+    "category": "mood",
+    "setup": "She says 'Sometimes I feel invisible around you.'",
+    "options": ["Look up and listen", "Say 'I see you'", "Apologize", "Ask how to fix it"],
+    "outcomes": {
+      "1": "Immediate repair. +90 XP.",
+      "2": "Powerful words. +80 XP.",
+      "3": "Good start. +60 XP.",
+      "4": "Plan begins. +95 XP."
+    },
+    "xp_range": [70, 100],
+    "rarity": "ultra"
+  },
+  {
+    "id": 149,
+    "category": "food",
+    "setup": "She cancels plans last minute.",
+    "options": ["Be understanding", "Be upset", "Suggest reschedule", "Ignore it"],
+    "outcomes": {
+      "1": "Mature move. +40 XP.",
+      "2": "She feels guilty. -15 XP.",
+      "3": "Wins empathy. +50 XP.",
+      "4": "Cold distance. -20 XP."
+    },
+    "xp_range": [30, 55],
+    "rarity": "common"
+  },
+  {
+    "id": 150,
+    "category": "texting",
+    "setup": "She sends a long message at 2 AM.",
+    "options": ["Read and respond", "Wait till morning", "Send a short reply", "Call her"],
+    "outcomes": {
+      "1": "She feels supported. +65 XP.",
+      "2": "She feels delayed. -10 XP.",
+      "3": "Confusion. -5 XP.",
+      "4": "Intense talk begins. +70 XP."
+    },
+    "xp_range": [45, 70],
+    "rarity": "rare"
+  },
+  {
+    "id": 151,
+    "category": "arguments",
+    "setup": "She says 'I need you to be present, not perfect.'",
+    "options": ["Say 'I will be present'", "Explain perfection", "Ask how", "Stay silent"],
+    "outcomes": {
+      "1": "Deep connection. +85 XP.",
+      "2": "Missed point. -30 XP.",
+      "3": "Learning begins. +70 XP.",
+      "4": "Silence weakens."
+    },
+    "xp_range": [60, 90],
+    "rarity": "ultra"
+  },
+  {
+    "id": 152,
+    "category": "random",
+    "setup": "She says 'I choose to stay.'",
+    "options": ["Ask why", "Say 'thank you'", "Promise change", "Stay quiet"],
+    "outcomes": {
+      "1": "She explains. +70 XP.",
+      "2": "Gratitude wins. +60 XP.",
+      "3": "Action required. +80 XP.",
+      "4": "Respectful silence."
+    },
+    "xp_range": [50, 80],
+    "rarity": "ultra"
+  },
+  {
+    "id": 153,
+    "category": "mood",
+    "setup": "She says 'I just want to feel safe with you.'",
+    "options": ["Hold her", "Ask what makes her safe", "Say 'I’m sorry'", "Stay quiet"],
+    "outcomes": {
+      "1": "Safety restored. +95 XP.",
+      "2": "Roadmap created. +85 XP.",
+      "3": "Healing starts. +70 XP.",
+      "4": "Missed chance. -30 XP."
+    },
+    "xp_range": [70, 100],
+    "rarity": "ultra"
+  },
+  {
+    "id": 154,
+    "category": "arguments",
+    "setup": "She says 'I love you but I'm not happy.'",
+    "options": ["Ask what would make her happy", "Say 'we can fix this'", "Panic", "Stay quiet"],
+    "outcomes": {
+      "1": "Clear path created. +100 XP.",
+      "2": "Optimistic but vague. +75 XP.",
+      "3": "Panic harms. -50 XP.",
+      "4": "Silence hurts. -40 XP."
+    },
+    "xp_range": [80, 120],
+    "rarity": "ultra"
+  },
+  {
+    "id": 155,
+    "category": "random",
+    "setup": "She says 'I'm tired of putting in more effort.'",
+    "options": ["Ask how to change", "Apologize", "Offer concrete steps", "Stay quiet"],
+    "outcomes": {
+      "1": "She gives examples. +85 XP.",
+      "2": "Soft recovery. +60 XP.",
+      "3": "Plan gains trust. +90 XP.",
+      "4": "Distance grows. -40 XP."
+    },
+    "xp_range": [60, 100],
+    "rarity": "ultra"
+  },
+  {
+    "id": 156,
+    "category": "mood",
+    "setup": "She says 'Sometimes I wish you'd notice the small things.'",
+    "options": ["Start a ritual", "Say 'I will'", "Ask which things", "Ignore"],
+    "outcomes": {
+      "1": "Ritual formed. +80 XP.",
+      "2": "Promise made. +60 XP.",
+      "3": "Specifics help. +70 XP.",
+      "4": "Missed again. -30 XP."
+    },
+    "xp_range": [50, 85],
+    "rarity": "rare"
+  },
+  {
+    "id": 157,
+    "category": "social",
+    "setup": "She says 'I feel judged when we're with your friends.'",
+    "options": ["Ask why", "Defend her", "Apologize", "Change friend group"],
+    "outcomes": {
+      "1": "Insight gained. +70 XP.",
+      "2": "Supportive move. +65 XP.",
+      "3": "Healing begins. +50 XP.",
+      "4": "Extreme but shows effort. +40 XP."
+    },
+    "xp_range": [50, 80],
+    "rarity": "rare"
+  },
+  {
+    "id": 158,
+    "category": "arguments",
+    "setup": "She says 'I can't keep doing this if nothing changes.'",
+    "options": ["Ask what changes", "Promise change", "Get defensive", "Stay quiet"],
+    "outcomes": {
+      "1": "Plan formed. +95 XP.",
+      "2": "Words need actions. +70 XP.",
+      "3": "Backfire. -45 XP.",
+      "4": "Silence threatens."
+    },
+    "xp_range": [70, 110],
+    "rarity": "ultra"
+  },
+  {
+    "id": 159,
+    "category": "mood",
+    "setup": "She says 'I want to feel like we matter to each other.'",
+    "options": ["Create a ritual", "Ask what matters", "Give a small gift", "Stay quiet"],
+    "outcomes": {
+      "1": "Ritual strengthens bond. +90 XP.",
+      "2": "Meaningful talk. +85 XP.",
+      "3": "Gesture helps. +60 XP.",
+      "4": "Silence damages. -35 XP."
+    },
+    "xp_range": [60, 100],
+    "rarity": "ultra"
+  },
+  {
+    "id": 160,
+    "category": "random",
+    "setup": "She says 'I need you to notice me more.'",
+    "options": ["Give focused attention", "Say 'I do notice'", "Ask how", "Stay quiet"],
+    "outcomes": {
+      "1": "She feels seen. +95 XP.",
+      "2": "She’s skeptical. -10 XP.",
+      "3": "Roadmap begins. +85 XP.",
+      "4": "Missed again. -40 XP."
+    },
+    "xp_range": [70, 110],
+    "rarity": "ultra"
+  },
+  {
+    "id": 161,
+    "category": "boss",
+    "setup": "Final Boss: She says 'I love you, but I'm not sure I can stay if things don't change.'",
+    "options": ["Ask what must change", "Plead", "Walk away", "Promise and plan"],
+    "outcomes": {
+      "1": "She lists specifics; healing begins. +150 XP.",
+      "2": "Emotional bargaining fails. -80 XP.",
+      "3": "Loss registered. -120 XP.",
+      "4": "Commitment with plan: ultimate redemption. +180 XP."
+    },
+    "xp_range": [100, 200],
+    "rarity": "ultra"
+  }
+]
